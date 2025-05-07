@@ -1,10 +1,10 @@
-# X Post Cleaner
+# CleanSlate
 
 A tool to automatically scan and remove problematic posts from your X (formerly Twitter) archive using a local multimodal LLM.
 
 ## Overview
 
-X Post Cleaner is designed to help you clean your X account history by automatically analyzing and removing potentially problematic posts. It uses a multimodal LLM (Large Language Model) to analyze both text and images in your posts, including context from replies and quoted tweets, to identify content that might be inappropriate for professional settings.
+CleanSlate is designed to help you clean your X account history by automatically analyzing and removing potentially problematic posts. It uses a multimodal LLM (Large Language Model) to analyze both text and images in your posts, including context from replies and quoted tweets, to identify content that might be inappropriate for professional settings.
 
 ## Features
 
@@ -28,15 +28,16 @@ X Post Cleaner is designed to help you clean your X account history by automatic
 
 ## Installation
 
-You can install X Post Cleaner using Astral's UV tool for fast dependency installation:
+You can install CleanSlate using Astral's UV tool for fast dependency installation:
 
 ```bash
 # Install UV (if not already installed)
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.7.0/uv-installer.sh | sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
 
 # Clone the repository
-git clone https://github.com/yourusername/x-post-cleaner.git
-cd x-post-cleaner
+git clone https://github.com/bewinxed/CleanSlate
+cd CleanSlate
 
 # Create a virtual environment and install dependencies
 uv venv
@@ -49,7 +50,7 @@ python -m playwright install chromium
 
 ## Usage
 
-To run X Post Cleaner:
+To run CleanSlate:
 
 ```bash
 python x_post_cleaner.py --tweets-file "path/to/your/tweets.js" --llm-studio-url "http://localhost:1234/v1/chat/completions"
